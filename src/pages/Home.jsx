@@ -52,7 +52,7 @@ const Home = () => {
           </div>
 
           <div className="hidden md:block">
-            <img className="opacity-100" src="./src/assets/circle.svg" />
+            <img className="opacity-100" src="/circle.svg" />
           </div>
         </section>
         <section
@@ -96,13 +96,13 @@ const Home = () => {
               </ol>
             </div>
             <div className="hidden md:flex justify-center items-center">
-              <img className="size-80" src="./src/assets/element_1.svg" />
+              <img className="size-80" src="/element_1.svg" />
             </div>
             <div className="hidden md:flex justify-center items-center">
-              <img className="size-80" src="./src/assets/element_2.svg" />
+              <img className="size-80" src="/element_2.svg" />
             </div>
             <div className="hidden md:flex justify-center items-center">
-              <img className="size-80" src="./src/assets/element_3.svg" />
+              <img className="size-80" src="/element_3.svg" />
             </div>
           </div>
           <div className="">
