@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Header from "../components/Header";
-import Typical from "react-typical";
 import { IoIosSend } from "react-icons/io";
 
 const Home = () => {
