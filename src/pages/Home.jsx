@@ -39,7 +39,6 @@ const Home = () => {
         <Header />
         <section
           id="sec1"
-          ref={ref1}
           className=" bg-gradient-to-r from-indigo-800 via-indigo-700 to-indigo-600  grid grid-cols-1 md:grid-cols-2 gap-[110px]  px-[40px] py-[100px] md:px-[165px]"
         >
           <div className="flex flex-col items-start justify-center mt-12 md:mt-0">
@@ -70,11 +69,9 @@ const Home = () => {
           </div>
         </section>
         <section
-          id="sec3"
+          // id="sec3"
           className={`grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-[110px] py-[40px] px-[40px] md:py-[60px] md:px-[165px] transition-opacity
-          ease-in
-          duration-700
-          ${isVisible1 ? "opacity-100" : "opacity-0"}`}
+          `}
         >
           <div className="border border-indigo-600 rounded-md p-8 hover:bg-indigo-400 hover:cursor-pointer hover:text-white transition-colors duration-300 ease-in-out">
             <div className="text-indigo-500 text-[30px] md:text-[30px] font-bold leading-[60px]">
@@ -130,8 +127,13 @@ const Home = () => {
           </div>
         </section>
         <section
-          id="sec3"
-          className=" grid grid-cols-1 md:grid-cols-2 gap-[110px] py-[40px] px-[40px] md:py-[60px] md:px-[165px]"
+          id="sec8"
+          ref={ref1}
+          className={`grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-[110px] py-[40px] px-[40px] md:py-[60px] md:px-[165px] transition-opacity
+          ease-in
+          duration-700
+          ${isVisible1 ? "opacity-100" : "opacity-0"}`}
+          // className=" grid grid-cols-1 md:grid-cols-2 gap-[110px] py-[40px] px-[40px] md:py-[60px] md:px-[165px]"
         >
           <div className="flex items-center justify-center">
             <div className="bg-indigo-600  rounded-full size-80">

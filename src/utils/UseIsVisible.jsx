@@ -1,21 +1,25 @@
 import { useEffect, useState } from "react";
 
 export function useIsVisible(ref) {
-    const [isIntersecting, setIntersecting] = useState(false);
-  
+    const [isVisible, setIsVisible] = useState(false);
+
     useEffect(() => {
-      if (ref.current) {
-        const observer = new IntersectionObserver(([entry]) => {
-          setIntersecting(entry.isIntersecting);
-        });
-        
-        observer.observe(ref.current);
-        
-        return () => {
-          observer.disconnect();
+        const handleScroll = () => {
+            if (ref.current) {
+                const { top, bottom } = ref.current.getBoundingClientRect();
+                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                const isVisible =  (top <= windowHeight-100)
+                setIsVisible(isVisible);
+            }
         };
-      }
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Check visibility on initial render
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, [ref]);
-  
-    return isIntersecting;
+
+    return isVisible;
 }
