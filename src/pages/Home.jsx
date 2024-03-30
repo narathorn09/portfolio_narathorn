@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Header from "../components/Header";
 import { IoIosSend } from "react-icons/io";
+import { useIsVisible } from "../utils/UseIsVisible";
 
 const Home = () => {
   const skillItems = [
@@ -29,12 +30,16 @@ const Home = () => {
   ];
   const designItems = [{ icon: "figma" }];
 
+  const ref1 = useRef();
+  const isVisible1 = useIsVisible(ref1);
+
   return (
     <>
       <div className="">
         <Header />
         <section
           id="sec1"
+          ref={ref1}
           className=" bg-gradient-to-r from-indigo-800 via-indigo-700 to-indigo-600  grid grid-cols-1 md:grid-cols-2 gap-[110px]  px-[40px] py-[100px] md:px-[165px]"
         >
           <div className="flex flex-col items-start justify-center mt-12 md:mt-0">
@@ -66,7 +71,10 @@ const Home = () => {
         </section>
         <section
           id="sec3"
-          className=" grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-[110px] py-[40px] px-[40px] md:py-[60px] md:px-[165px]"
+          className={`grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-[110px] py-[40px] px-[40px] md:py-[60px] md:px-[165px] transition-opacity
+          ease-in
+          duration-700
+          ${isVisible1 ? "opacity-100" : "opacity-0"}`}
         >
           <div className="border border-indigo-600 rounded-md p-8 hover:bg-indigo-400 hover:cursor-pointer hover:text-white transition-colors duration-300 ease-in-out">
             <div className="text-indigo-500 text-[30px] md:text-[30px] font-bold leading-[60px]">
@@ -317,7 +325,10 @@ const Home = () => {
           </div>
           <div className="">
             {skillItems.map((item) => (
-              <img className="inline-block h-12 w-12 rounded-full ring-2 ring-white" src={`https://skillicons.dev/icons?i=${item.icon}`} />
+              <img
+                className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+                src={`https://skillicons.dev/icons?i=${item.icon}`}
+              />
             ))}
           </div>
         </section>
@@ -325,8 +336,7 @@ const Home = () => {
           id="sec4"
           className="bg-gradient-to-r from-indigo-800 via-indigo-700 to-indigo-600 flex flex-col items-center justify-center py-[40px] px-[40px] md:py-[60px] md:px-[165px]"
         >
-          <div className="mb-4   text-[30px] md:text-[30px] font-bold leading-[60px]">
-          </div>
+          <div className="mb-4   text-[30px] md:text-[30px] font-bold leading-[60px]"></div>
           <div className="grid grid-cols-4 md:grid-cols-9 gap-5"></div>
         </section>
       </div>

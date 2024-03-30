@@ -1,16 +1,20 @@
 import React from "react";
 import DarkModeSwitcher from "./DarkModeSwitcher";
+import { AiFillThunderbolt } from "react-icons/ai";
 
 const Header = () => {
   return (
-    
-      <div className=" inset-x-px top-0 flex items-center justify-between px-[40px] md:px-[165px] py-[17px] drop-shadow-md bg-white dark:bg-black z-10">
-        <h1 className="text-indigo-800 font-bold text-md">NARATHORN</h1>
-        <nav>
-          <DarkModeSwitcher />
-        </nav>
+    <div className=" inset-x-px top-0 flex items-center justify-between px-[40px] md:px-[165px] py-[17px] drop-shadow-md bg-white dark:bg-black z-10">
+      <div className="flex items-center justify-center">
+        <div className="bg-indigo-600  text-white flex items-center justify-center rounded-full size-7 py-1 px-1 drop-shadow-sm">
+        <AiFillThunderbolt className="" />
+        </div>
+        <h1 className="text-indigo-700 font-bold text-xl ml-2">FNNz</h1>
       </div>
-    
+      <nav>
+        <DarkModeSwitcher />
+      </nav>
+    </div>
   );
 };
 
