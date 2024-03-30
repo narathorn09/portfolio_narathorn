@@ -38,10 +38,10 @@ const Home = () => {
           className=" bg-gradient-to-r from-indigo-800 via-indigo-700 to-indigo-600  grid grid-cols-1 md:grid-cols-2 gap-[110px]  px-[40px] py-[100px] md:px-[165px]"
         >
           <div className="flex flex-col items-start justify-center mt-12 md:mt-0">
-            <div className="text-white text-[40px] md:text-[50px] font-bold leading-[60px]">
-              Hello Word!
+            <div className="uppercase text-white text-[40px] md:text-[50px] font-bold leading-[60px]">
+              Hello World!
             </div>
-            <div className="text-white text-[40px] md:text-[50px] font-bold leading-[60px]">
+            <div className="uppercase text-white text-[40px] md:text-[50px] font-bold leading-[60px]">
               Narathorn Noophum
             </div>
             <div className="text-white text-[18px] font-thin leading-[30px] mt-4">
