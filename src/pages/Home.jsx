@@ -98,14 +98,13 @@ const Home = () => {
             <p class="text-base font-normal text-gray-500 dark:text-gray-400">
               Faculty of Science | Computer Science
             </p>
-
-          <div className="flex flex-col md:flex-row md:space-x-3 ">
-            <p className="uppercase mt-4 flex justify-center items-center w-[100px] bg-gradient-to-r font-medium from-indigo-800 via-indigo-700 to-indigo-500 rounded-full text-white px-4 py-2">
-              GPA 3.81
-            </p>
-            <p className="uppercase mt-4 flex justify-center items-center w-[200px] bg-gradient-to-r font-medium from-indigo-800 via-indigo-700 to-indigo-500 rounded-full text-white px-4 py-2">
-              first-class honors
-            </p>
+            <div className="flex flex-col md:flex-row md:space-x-3 ">
+              <p className="uppercase mt-4 flex justify-center items-center w-[100px] bg-gradient-to-r font-medium from-indigo-800 via-indigo-700 to-indigo-500 rounded-full text-white px-4 py-2">
+                GPA 3.81
+              </p>
+              <p className="uppercase mt-4 flex justify-center items-center w-[200px] bg-gradient-to-r font-medium from-indigo-800 via-indigo-700 to-indigo-500 rounded-full text-white px-4 py-2">
+                first-class honors
+              </p>
             </div>
           </div>
         </div>
@@ -147,6 +146,7 @@ const Home = () => {
               description={projectItem.description}
               listGit={projectItem.listGit}
               listSkill={projectItem.listSkill}
+              className={ index === 3 ? "md:col-start-2" : ""}
             />
           ))}
         </div>
@@ -155,18 +155,18 @@ const Home = () => {
         id="sec7"
         className="flex flex-col items-center justify-center py-[40px] px-[40px] md:py-[80px] md:px-[165px] bg-slate-50"
       >
-        <div className="mb-4  text-center bg-gradient-to-r from-indigo-800 to-indigo-400 bg-clip-text text-transparent text-[30px] md:text-[40px] font-bold leading-[60px]">
+        <div className="mb-8  text-center bg-gradient-to-r from-indigo-800 to-indigo-400 bg-clip-text text-transparent text-[30px] md:text-[40px] font-bold leading-[60px]">
           SKILLS
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3">
           {skillItems.map((item) => (
-            <CardSkill icon={item.icon} title={item.title} />
+            <CardSkill icon={item.icon} title={item.title} level={item.level}/>
           ))}
         </div>
       </section>
       <section
         id="sec8"
-        className="bg-gradient-to-r from-indigo-800 via-indigo-700 to-indigo-600 flex flex-col items-center justify-center py-[40px] px-[40px] md:py-[60px] md:px-[165px]"
+        className="bg-white flex flex-col items-center justify-center py-[40px] px-[40px] md:py-[60px] md:px-[165px]"
       >
         <div className="mb-4   text-[30px] md:text-[30px] font-bold leading-[60px]"></div>
         <div className="grid grid-cols-4 md:grid-cols-9 gap-5"></div>
