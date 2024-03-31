@@ -12,7 +12,7 @@ const CardProject = ({
 }) => {
   return (
     <div
-      className={`border-t-4 border-indigo-600 hover:border-slate-800 hover:bg-gray-50 hover:cursor-pointer rounded-md p-8 min-h-[300px] bg-white drop-shadow-xl transition duration-200 ease-in-out transform`}
+      className={`border-t-4 border-indigo-600 hover:border-slate-800 hover:bg-gray-50 hover:cursor-pointer rounded-md p-8 min-h-[300px] bg-white shadow-md shadow-indigo-200 transition duration-200 ease-in-out transform`}
     >
       {/* <time class="mb-1 text-sm font-medium leading-none text-gray-400 dark:text-gray-500">
         {dateRange}

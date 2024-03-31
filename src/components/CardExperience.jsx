@@ -10,7 +10,7 @@ const CardExperience = ({
   listSkill,
 }) => {
   return (
-    <div className="border border-indigo-600 rounded-md p-8 min-h-[300px] bg-white drop-shadow-xl ">
+    <div className="border border-indigo-600 rounded-md p-8 min-h-[300px] bg-white shadow-xl shadow-indigo-200 ">
       <time class="mb-1 text-sm font-medium leading-none text-gray-700 dark:text-gray-500">
         {dateRange}
       </time>
@@ -29,7 +29,7 @@ const CardExperience = ({
           <a
             href={`${work.url}`}
             target="_blank"
-            className="uppercase flex justify-center items-center bg-gradient-to-r from-indigo-800 via-indigo-700 to-indigo-500 text-white font-medium px-4 py-2 rounded-md  hover:bg-slate-600 hover:text-white cursor-pointer"
+            className="uppercase flex justify-center items-center bg-gradient-to-r from-indigo-800 via-indigo-700 to-indigo-500 text-white font-medium px-4 py-2 rounded-md  hover:bg-slate-600 hover:text-white cursor-pointer transition duration-200 ease-in-out transform hover:-translate-4 hover:scale-105 hover:shadow-lg hover:shadow-slate-500/50 hover:bg-gradient-to-r hover:from-slate-800 hover:via-slate-700 hover:to-slate-500"
           >
             work {i+1} <LuExternalLink className="ml-1 size-4" />
           </a>
