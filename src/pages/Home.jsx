@@ -25,7 +25,7 @@ const Home = () => {
         id="sec1"
         className="bg-gradient-to-r from-indigo-800 via-indigo-700 to-indigo-600  grid grid-cols-1 md:grid-cols-2 gap-[110px]  px-[40px] py-[100px] md:px-[165px]"
       >
-        <div className="flex flex-col items-start justify-center mt-12 md:mt-0">
+        <div className="flex flex-col items-start justify-center mt-12 md:mt-0 z-10">
           <div className="uppercase text-white text-[40px] md:text-[50px] font-bold leading-[60px]">
             Hello World!
           </div>
@@ -39,7 +39,7 @@ const Home = () => {
           <div className="mt-8">
             <a
               href="mailto:narathorn.work@gmail.com"
-              className="relative bg-white text-slate-950 font-medium px-4 py-2 rounded-md hover:text-indigo-900 cursor-pointer flex items-center"
+              className="uppercase flex justify-center items-center bg-white text-indigo-900 font-medium px-4 py-2 rounded-md cursor-pointer transition duration-200 ease-in-out transform hover:-translate-4 hover:scale-105 hover:shadow-xl hover:shadow-indigo-900/30"
             >
               <span className="flex justify-center items-center">
                 Contact now! <IoIosSend class="ml-1 size-5" />
@@ -51,6 +51,7 @@ const Home = () => {
             </a>
           </div>
         </div>
+        <img src="./element_1.svg" className="absolute object-fit top-0 left-0 w-full h-full opacity-10 z-0"/>
       </section>
       <section
         id="sec2"
