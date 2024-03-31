@@ -55,7 +55,7 @@ const Home = () => {
       </section>
       <section
         id="sec2"
-        className={`grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-[40px] py-[40px] px-[40px] md:py-[60px] md:px-[165px]`}
+        className={`grid grid-cols-1 bg-slate-50 md:grid-cols-3 gap-y-8 gap-[40px] py-[40px] px-[40px] md:py-[60px] md:px-[165px]`}
       >
         {introItems.map((item) => (
           <CardIntro
@@ -116,7 +116,7 @@ const Home = () => {
 
       <section
         id="sec5"
-        className="bg-white  py-[40px] px-[40px] md:py-[60px] md:px-[165px] bg-slate-50"
+        className="py-[40px] px-[40px] md:py-[60px] md:px-[165px] bg-slate-50"
       >
         <div className="mb-8 text-center bg-gradient-to-r from-indigo-800 to-indigo-400 bg-clip-text text-transparent text-[30px] md:text-[40px] font-bold leading-[60px]">
           EXPERIENCE
