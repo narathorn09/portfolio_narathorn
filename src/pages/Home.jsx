@@ -1,23 +1,18 @@
-import { useState, useRef } from "react";
-import Header from "../components/Header";
 import { IoIosSend } from "react-icons/io";
-import { useIsVisible } from "../utils/UseIsVisible";
+import Header from "../components/Header";
 import CardExperience from "../components/CardExperience";
 import CardProject from "../components/CardProject";
 import CardSkill from "../components/CardSkill";
 import CardIntro from "../components/CardIntro";
+import CardContact from "../components/CardContact";
+import Footer from "../components/Footer";
 import skillItems from "../JSON/skillItems";
 import introItems from "../JSON/introItems";
 import experienceItems from "../JSON/experienceItems";
 import projectItems from "../JSON/projectItems";
 import contactItems from "../JSON/contactItems";
-import CardContact from "../components/CardContact";
-import Footer from "../components/Footer";
 
 const Home = () => {
-  const ref1 = useRef();
-  const isVisible1 = useIsVisible(ref1);
-
   return (
     <div className="dark:bg-slate-900">
       <Header />
@@ -44,14 +39,13 @@ const Home = () => {
               <span className="flex justify-center items-center">
                 Contact now! <IoIosSend class="ml-1 size-5" />
               </span>
-              {/* <span class="absolute -top-1 -right-1 flex h-3 w-3">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
-                </span> */}
             </a>
           </div>
         </div>
-        <img src="./element_1.svg" className="absolute object-fit top-0 left-0 w-full h-full opacity-10 z-0"/>
+        <img
+          src="./element_1.svg"
+          className="absolute object-fit top-[70px] left-0 w-full h-full opacity-10 z-0"
+        />
       </section>
       <section
         id="sec2"
@@ -115,7 +109,7 @@ const Home = () => {
       </section>
 
       <section
-        id="sec5"
+        id="sec4"
         className="py-[40px] px-[40px] md:py-[60px] md:px-[165px] bg-slate-50"
       >
         <div className="mb-8 text-center bg-gradient-to-r from-indigo-800 to-indigo-400 bg-clip-text text-transparent text-[30px] md:text-[40px] font-bold leading-[60px]">
@@ -135,7 +129,7 @@ const Home = () => {
         </div>
       </section>
       <section
-        id="sec6"
+        id="sec5"
         className="bg-white  py-[40px] px-[40px] md:py-[60px] md:px-[165px] "
       >
         <div className="mb-8 text-center bg-gradient-to-r from-indigo-800 to-indigo-400 bg-clip-text text-transparent text-[30px] md:text-[40px] font-bold leading-[60px]">
@@ -156,7 +150,7 @@ const Home = () => {
         </div>
       </section>
       <section
-        id="sec7"
+        id="sec6"
         className="flex flex-col items-center justify-center py-[40px] pb-[80px] px-[40px] md:py-[100px] md:pt-[60px] md:px-[165px] bg-slate-50"
       >
         <div className="mb-8  text-center bg-gradient-to-r from-indigo-800 to-indigo-400 bg-clip-text text-transparent text-[30px] md:text-[40px] font-bold">
@@ -169,7 +163,7 @@ const Home = () => {
         </div>
       </section>
       <section
-        id="sec8"
+        id="sec7"
         className="bg-gradient-to-r from-indigo-800 via-indigo-700 to-indigo-600 flex flex-col items-center justify-center py-[50px] pb-[80px] px-[40px] md:py-[60px] md:px-[165px] "
       >
         <div className="mb-4 text-[30px] md:text-[30px] font-bold leading-[60px] text-white">

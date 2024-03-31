@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { IoLogoGithub } from "react-icons/io";
 
 const CardSkill = ({ title, icon, level }) => {
   const [color, setColor] = useState("");
