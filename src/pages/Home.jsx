@@ -10,13 +10,16 @@ import skillItems from "../JSON/skillItems";
 import introItems from "../JSON/introItems";
 import experienceItems from "../JSON/experienceItems";
 import projectItems from "../JSON/projectItems";
+import contactItems from "../JSON/contactItems";
+import CardContact from "../components/CardContact";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const ref1 = useRef();
   const isVisible1 = useIsVisible(ref1);
 
   return (
-    <div>
+    <div className="dark:bg-slate-900">
       <Header />
       <section
         id="sec1"
@@ -132,7 +135,7 @@ const Home = () => {
       </section>
       <section
         id="sec6"
-        className="bg-white  py-[40px] px-[40px] md:py-[60px] md:px-[165px]"
+        className="bg-white  py-[40px] px-[40px] md:py-[60px] md:px-[165px] "
       >
         <div className="mb-8 text-center bg-gradient-to-r from-indigo-800 to-indigo-400 bg-clip-text text-transparent text-[30px] md:text-[40px] font-bold leading-[60px]">
           PROJECT
@@ -146,31 +149,42 @@ const Home = () => {
               description={projectItem.description}
               listGit={projectItem.listGit}
               listSkill={projectItem.listSkill}
-              className={ index === 3 ? "md:col-start-2" : ""}
+              className={index === 3 ? "md:col-start-2" : ""}
             />
           ))}
         </div>
       </section>
       <section
         id="sec7"
-        className="flex flex-col items-center justify-center py-[40px] px-[40px] md:py-[80px] md:px-[165px] bg-slate-50"
+        className="flex flex-col items-center justify-center py-[40px] pb-[80px] px-[40px] md:py-[100px] md:pt-[60px] md:px-[165px] bg-slate-50"
       >
-        <div className="mb-8  text-center bg-gradient-to-r from-indigo-800 to-indigo-400 bg-clip-text text-transparent text-[30px] md:text-[40px] font-bold leading-[60px]">
+        <div className="mb-8  text-center bg-gradient-to-r from-indigo-800 to-indigo-400 bg-clip-text text-transparent text-[30px] md:text-[40px] font-bold">
           SKILLS
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3">
           {skillItems.map((item) => (
-            <CardSkill icon={item.icon} title={item.title} level={item.level}/>
+            <CardSkill icon={item.icon} title={item.title} level={item.level} />
           ))}
         </div>
       </section>
       <section
         id="sec8"
-        className="bg-white flex flex-col items-center justify-center py-[40px] px-[40px] md:py-[60px] md:px-[165px]"
+        className="bg-gradient-to-r from-indigo-800 via-indigo-700 to-indigo-600 flex flex-col items-center justify-center py-[50px] pb-[80px] px-[40px] md:py-[60px] md:px-[165px] "
       >
-        <div className="mb-4   text-[30px] md:text-[30px] font-bold leading-[60px]"></div>
-        <div className="grid grid-cols-4 md:grid-cols-9 gap-5"></div>
+        <div className="mb-4 text-[30px] md:text-[30px] font-bold leading-[60px] text-white">
+          CONTACT
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {contactItems.map((item) => (
+            <CardContact
+              icon={item?.icon}
+              title={item?.title}
+              href={item?.href}
+            />
+          ))}
+        </div>
       </section>
+      <Footer />
     </div>
   );
 };

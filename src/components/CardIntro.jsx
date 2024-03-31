@@ -1,5 +1,5 @@
 import React from "react";
-import { IoLogoGithub } from "react-icons/io";
+
 
 const CardIntro = ({ title, description, listItem }) => {
   return (
