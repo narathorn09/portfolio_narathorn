@@ -3,7 +3,7 @@ const projectItems = [
     subTitle: "Mini Project",
     title: "BOOKING SYSTEM",
     description:
-      " I have developed a booking system utilizing React.js + Vite, Node.js, Express.js and MongoDB",
+      " I have developed a booking system utilizing React.js + Vite, Tailwind, Node.js, Express.js, and MongoDB",
     listGit: [
       {
         title: "frontend",
@@ -27,7 +27,7 @@ const projectItems = [
     subTitle: " Mini Project",
     title: "REVIEW ANIME SYSTEM",
     description:
-      " I have developed a review anime system utilizing Vue.js,Spring Boot, Antd and MySQL",
+      " I have developed a review anime system utilizing Vue.js, Spring Boot, Antd, and MySQL",
     listGit: [
       {
         title: "frontend",
@@ -44,7 +44,7 @@ const projectItems = [
     subTitle: "Final Project",
     title: "EVIDENCE MANAGEMENT SYSTEM",
     description:
-      "I am developing an evidence management system for Forensic Science Center 9, utilizing React.js, Node.js, Express.js, MUI, Antd, and MySQL.",
+      "I am developing an evidence management system for Forensic Science Center 9, utilizing React.js, Node.js, Express.js, MUI, Antd, Tailwind, and MySQL.",
     listGit: [
       {
         title: "frontend",
@@ -60,6 +60,7 @@ const projectItems = [
       { icon: "nodejs" },
       { icon: "express" },
       { icon: "mui" },
+      { icon: "tailwind" },
       { icon: "mysql" },
     ],
   },

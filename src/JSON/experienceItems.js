@@ -4,7 +4,7 @@ const experienceItems = [
     subTitle: "Stream South Technology Co.",
     title: "FULL STACK DEVELOPER",
     description:
-      "I interned in a Full Stack Developer position, utilizing ReactJs, NodeJs, MongoDB, Powerapps, PowerAutomate and Django.",
+      "I interned in a Full Stack Developer position, utilizing React.js, Node.js, MongoDB, Powerapps, PowerAutomate and Django.",
     listWork: [
       { title: "HIA", url: "https://www.thaihia.in.th/" },
       {
@@ -26,7 +26,7 @@ const experienceItems = [
     subTitle: "Stream South Technology Co.",
     title: "FULL STACK DEVELOPER",
     description:
-      "I interned in a Full Stack Developer position, utilizing ReactJs, NodeJs, MongoDB, and GraphQL.",
+      "I interned in a Full Stack Developer position, utilizing React.js, Node.js, MongoDB, and GraphQL.",
     listWork: [{ title: "ARCHIVE", url: "https://archive.sci.psu.ac.th/" }],
     listSkill: [
       { icon: "react" },
