@@ -2,7 +2,6 @@ import React from "react";
 import { IoLogoGithub } from "react-icons/io";
 
 const CardProject = ({
-  dateRange,
   subTitle,
   title,
   description,
@@ -14,22 +13,19 @@ const CardProject = ({
     <div
       className={`${className} border-t-4 border-indigo-600 hover:border-slate-800 hover:bg-slate-50 hover:cursor-pointer rounded-md p-8 min-h-[300px] bg-white shadow-md shadow-indigo-200 transition duration-200 ease-in-out transform`}
     >
-      {/* <time class="mb-1 text-sm font-medium leading-none text-gray-400 dark:text-gray-500">
-        {dateRange}
-      </time> */}
-      <p class="mb-4 mt-1 text-sm font-medium leading-none text-gray-700 dark:text-gray-500">
+      <p className="mb-4 mt-1 text-sm font-medium leading-none text-gray-700 dark:text-gray-500">
         {subTitle}
       </p>
-      <h3 class="text-lg font-semibold text-slate-700 dark:text-white">
+      <h3 className="text-lg font-semibold text-slate-700 dark:text-white">
         {title}
       </h3>
-      <p class="text-base text-wrap font-normal text-gray-500 md:h-[100px] dark:text-gray-400">
+      <p className="text-base text-wrap font-normal text-gray-500 md:h-[100px] dark:text-gray-400">
         {description}
       </p>
 
       <div className="mt-3 flex flex-col md:flex-row justify-start items-start space-y-4 md:space-y-0 md:space-x-4 mt-4 mb-6">
         {listGit?.map((git, i) => (
-          <div className="flex flex-row justify-center items-center ">
+          <div key={i} className="flex flex-row justify-center items-center ">
             <a
               href={`${git.url}`}
               target="_blank"
@@ -40,10 +36,11 @@ const CardProject = ({
           </div>
         ))}
       </div>
-      <div class="mt-3 flex -space-x-2 overflow-hidden justify-start">
-        {listSkill?.map((item) => (
+      <div className="mt-3 flex -space-x-2 overflow-hidden justify-start">
+        {listSkill?.map((item, i) => (
           <img
-            class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+            key={i}
+            className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
             src={`https://skillicons.dev/icons?i=${item.icon}`}
           />
         ))}

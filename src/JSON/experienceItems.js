@@ -1,6 +1,6 @@
 const experienceItems = [
   {
-    dateRange: "September 2023 - March 2024",
+    dateRange: "September 2023 - February 2024",
     subTitle: "Stream South Technology Co.",
     title: "FULL STACK DEVELOPER",
     description:

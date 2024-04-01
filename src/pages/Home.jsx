@@ -37,7 +37,7 @@ const Home = () => {
               className="uppercase flex justify-center items-center bg-white text-indigo-900 font-medium px-4 py-2 rounded-md cursor-pointer transition duration-200 ease-in-out transform hover:-translate-4 hover:scale-105 hover:shadow-xl hover:shadow-indigo-900/30"
             >
               <span className="flex justify-center items-center">
-                Contact now! <IoIosSend class="ml-1 size-5" />
+                Contact now! <IoIosSend className="ml-1 size-5" />
               </span>
             </a>
           </div>
@@ -51,8 +51,9 @@ const Home = () => {
         id="sec2"
         className={`grid grid-cols-1 bg-slate-50 md:grid-cols-3 gap-y-8 gap-[40px] py-[40px] px-[40px] md:py-[60px] md:px-[165px]`}
       >
-        {introItems.map((item) => (
+        {introItems.map((item, index) => (
           <CardIntro
+            key={index}
             title={item.title}
             description={item.description}
             listItem={item.listItem}
@@ -87,13 +88,13 @@ const Home = () => {
               EDUCATION
             </div>
 
-            <time class="mb-1 text-sm font-normal leading-none text-slate-500 dark:text-gray-500">
+            <time className="mb-1 text-sm font-normal leading-none text-slate-500 dark:text-gray-500">
               2020 - 2024
             </time>
-            <h3 class="text-lg font-semibold text-slate-600 dark:text-white">
+            <h3 className="text-lg font-semibold text-slate-600 dark:text-white">
               PRINCE OF SONGKLA UNIVERSITY
             </h3>
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+            <p className="text-base font-normal text-gray-500 dark:text-gray-400">
               Faculty of Science | Computer Science
             </p>
             <div className="flex flex-col md:flex-row md:space-x-3 ">
@@ -116,8 +117,9 @@ const Home = () => {
           EXPERIENCE
         </div>
         <div className="grid grid-cols-1  md:grid-cols-2 gap-8">
-          {experienceItems.map((experienceItem) => (
+          {experienceItems.map((experienceItem, index) => (
             <CardExperience
+              key={index}
               dateRange={experienceItem.dateRange}
               subTitle={experienceItem.subTitle}
               title={experienceItem.title}
@@ -138,6 +140,7 @@ const Home = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {projectItems.map((projectItem, index) => (
             <CardProject
+              key={index}
               dateRange={projectItem.dateRange}
               subTitle={projectItem.subTitle}
               title={projectItem.title}
@@ -157,8 +160,13 @@ const Home = () => {
           SKILLS
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3">
-          {skillItems.map((item) => (
-            <CardSkill icon={item.icon} title={item.title} level={item.level} />
+          {skillItems.map((item, index) => (
+            <CardSkill
+              key={index}
+              icon={item.icon}
+              title={item.title}
+              level={item.level}
+            />
           ))}
         </div>
       </section>
@@ -170,8 +178,9 @@ const Home = () => {
           CONTACT
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {contactItems.map((item) => (
+          {contactItems.map((item, index) => (
             <CardContact
+              key={index}
               icon={item?.icon}
               title={item?.title}
               href={item?.href}
