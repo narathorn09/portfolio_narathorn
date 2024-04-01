@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoLogoGithub } from "react-icons/io";
+import { useDispatch } from "react-redux";
+import { setIsOpen, setUrlImg } from "../redux/modalSlice";
+import { IoEye } from "react-icons/io5";
 
 const CardProject = ({
   subTitle,
@@ -8,7 +11,15 @@ const CardProject = ({
   listGit,
   className,
   listSkill,
+  urlImg,
+  countImg,
+  isSee
 }) => {
+  const dispatch = useDispatch();
+  const toggleModal = () => {
+    dispatch(setIsOpen({}));
+    dispatch(setUrlImg({ url: urlImg, count: countImg }));
+  };
   return (
     <div
       className={`${className} border-t-4 border-indigo-600 hover:border-slate-800 hover:bg-slate-50 hover:cursor-pointer rounded-md p-8 min-h-[300px] bg-white shadow-md shadow-indigo-200 transition duration-200 ease-in-out transform`}
@@ -45,6 +56,15 @@ const CardProject = ({
           />
         ))}
       </div>
+      {isSee && <div className="flex justify-end">
+        <button
+          onClick={toggleModal}
+          className="uppercase flex justify-center items-center bg-gradient-to-r from-indigo-800 via-indigo-700 to-indigo-500 text-white font-medium px-2 py-2 rounded-full  hover:bg-slate-600 hover:text-white cursor-pointer transition duration-200 ease-in-out transform hover:-translate-4 hover:scale-105 hover:shadow-lg hover:shadow-slate-500/50 hover:bg-gradient-to-r hover:from-slate-800 hover:via-slate-700 hover:to-slate-500"
+          type="button"
+        >
+          <IoEye />
+        </button>
+      </div>}
     </div>
   );
 };

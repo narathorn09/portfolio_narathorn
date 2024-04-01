@@ -11,10 +11,13 @@ import introItems from "../JSON/introItems";
 import experienceItems from "../JSON/experienceItems";
 import projectItems from "../JSON/projectItems";
 import contactItems from "../JSON/contactItems";
+import Modal from "../components/Modal";
+
 
 const Home = () => {
   return (
     <div className="dark:bg-slate-900">
+      {/* <Modal /> */}
       <Header />
       <section
         id="sec1"
@@ -147,6 +150,9 @@ const Home = () => {
               description={projectItem.description}
               listGit={projectItem.listGit}
               listSkill={projectItem.listSkill}
+              urlImg={projectItem?.urlImg}
+              countImg={projectItem?.countImg}
+              isSee={projectItem?.isSee}
               className={index === 3 ? "md:col-start-2" : ""}
             />
           ))}

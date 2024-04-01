@@ -22,12 +22,15 @@ const projectItems = [
       { icon: "express" },
       { icon: "mongodb" },
     ],
+    urlImg: "/project/booking/image_",
+    countImg: 5,
+    isSee: true
   },
   {
     subTitle: " Mini Project",
-    title: "REVIEW ANIME SYSTEM",
+    title: "REVIEW BOARD GAME SYSTEM",
     description:
-      " I have developed a review anime system utilizing Vue.js, Spring Boot, Antd, and MySQL",
+      " I have developed a review board game system utilizing Vue.js, Spring Boot, Antd, and MySQL",
     listGit: [
       {
         title: "frontend",
@@ -39,6 +42,9 @@ const projectItems = [
       },
     ],
     listSkill: [{ icon: "vuejs" }, { icon: "spring" }, { icon: "mysql" }],
+    urlImg: "/project/boardgame/image_",
+    countImg: 6,
+    isSee: true
   },
   {
     subTitle: "Final Project",
@@ -63,6 +69,9 @@ const projectItems = [
       { icon: "tailwind" },
       { icon: "mysql" },
     ],
+    urlImg: "/project/evidence/image_",
+    countImg: 10,
+    isSee: true
   },
 
   {
@@ -83,6 +92,7 @@ const projectItems = [
       { icon: "mui" },
       { icon: "mysql" },
     ],
+    isSee: false
   },
 ];
 
