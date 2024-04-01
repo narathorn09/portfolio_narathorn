@@ -17,7 +17,7 @@ import Modal from "../components/Modal";
 const Home = () => {
   return (
     <div className="dark:bg-slate-900">
-      {/* <Modal /> */}
+      <Modal />
       <Header />
       <section
         id="sec1"
