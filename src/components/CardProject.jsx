@@ -18,7 +18,7 @@ const CardProject = ({
   const dispatch = useDispatch();
   const toggleModal = () => {
     dispatch(setIsOpen({}));
-    dispatch(setUrlImg({ url: urlImg, count: countImg }));
+    dispatch(setUrlImg({ url: urlImg, count: countImg , title: title}));
   };
   return (
     <div
