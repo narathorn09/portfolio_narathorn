@@ -1,4 +1,5 @@
 import { IoIosSend } from "react-icons/io";
+import { Helmet } from "react-helmet";
 import Header from "../components/Header";
 import CardExperience from "../components/CardExperience";
 import CardProject from "../components/CardProject";
@@ -13,10 +14,30 @@ import projectItems from "../JSON/projectItems";
 import contactItems from "../JSON/contactItems";
 import Modal from "../components/Modal";
 
-
 const Home = () => {
   return (
     <div className="dark:bg-slate-900">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>FNNz</title>
+        <link rel="canonical" href="https://fannz.vercel.app/" />
+        {/* Add meta tags for SEO */}
+        <meta
+          name="description"
+          content="My name is Narathorn Noophum. My nickname is Fan. I’m 22 yearsold."
+        />
+        <meta name="keywords" content="Narathorn, Noophum, Narathorn Noophum, fullstack, Portfolio" />
+        <meta name="author" content="Narathorn Noophum" />
+        {/* Add Open Graph meta tags for better social sharing */}
+        <meta property="og:title" content="FNNz Portfolio" />
+        <meta property="og:description" content="My name is Narathorn Noophum. My nickname is Fan. I’m 22 yearsold." />
+        <meta property="og:image" content="%PUBLIC_URL%/logo.ico" />
+        <meta property="og:url" content="https://fannz.vercel.app/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="FNNz Portfolio" />
+        <meta name="twitter:description" content="Your description here" />
+        <meta name="twitter:image" content="https://fannz.vercel.app/logo.ico" />
+      </Helmet>
       <Modal />
       <Header />
       <section
@@ -47,6 +68,7 @@ const Home = () => {
         </div>
         <img
           src="./element_1.svg"
+          alt="hero-img-cover"
           className="absolute object-fit top-[70px] left-0 w-full h-full opacity-10 z-0"
         />
       </section>

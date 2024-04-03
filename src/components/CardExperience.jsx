@@ -44,6 +44,7 @@ const CardExperience = ({
         {listSkill?.map((item, i) => (
           <img
             key={i}
+            alt={`${item}-${i + 1}`}
             className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
             src={`https://skillicons.dev/icons?i=${item.icon}`}
           />

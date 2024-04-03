@@ -47,7 +47,9 @@ const Modal = () => {
           <div className="p-4 w-full  max-w-[100%] md:max-w-[70%]">
             <div className="p-4 bg-white rounded-lg shadow dark:bg-gray-700">
               <div className="flex justify-between items-center pl-2 mb-1">
-              <div className="font-bold text-xl bg-gradient-to-r from-indigo-800 to-indigo-600 bg-clip-text text-transparent">{title}</div>
+                <div className="font-bold text-xl bg-gradient-to-r from-indigo-800 to-indigo-600 bg-clip-text text-transparent">
+                  {title}
+                </div>
                 <button
                   onClick={toggleModal}
                   type="button"
@@ -71,7 +73,7 @@ const Modal = () => {
                   <span className="sr-only">Close modal</span>
                 </button>
               </div>
-              
+
               <div className="">
                 <div
                   id="default-carousel"
