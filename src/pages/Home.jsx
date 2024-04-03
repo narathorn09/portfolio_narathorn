@@ -17,25 +17,25 @@ import Modal from "../components/Modal";
 const Home = () => {
   return (
     <div className="dark:bg-slate-900">
-      <Helmet>
+     <Helmet>
         <meta charSet="utf-8" />
-        <title>FNNz</title>
+        <title>Narathorn Noophum</title>
         <link rel="canonical" href="https://fannz.vercel.app/" />
         {/* Add meta tags for SEO */}
         <meta
           name="description"
-          content="My name is Narathorn Noophum. My nickname is Fan. I’m 22 yearsold."
+          content="Narathorn Noophum's portfolio. My name is Narathorn Noophum. My nickname is Fan. I’m 22 years old."
         />
-        <meta name="keywords" content="Narathorn, Noophum, Narathorn Noophum, fullstack, Portfolio" />
+        <meta name="keywords" content="Narathorn Noophum, Narathorn, Noophum, fullstack, Portfolio, developer" />
         <meta name="author" content="Narathorn Noophum" />
         {/* Add Open Graph meta tags for better social sharing */}
-        <meta property="og:title" content="FNNz Portfolio" />
-        <meta property="og:description" content="My name is Narathorn Noophum. My nickname is Fan. I’m 22 yearsold." />
-        <meta property="og:image" content="%PUBLIC_URL%/logo.ico" />
+        <meta property="og:title" content="Narathorn Noophum Portfolio - FNNz" />
+        <meta property="og:description" content="Narathorn Noophum's portfolio. My name is Narathorn Noophum. My nickname is Fan. I’m 22 years old." />
+        <meta property="og:image" content="https://fannz.vercel.app/logo.ico" />
         <meta property="og:url" content="https://fannz.vercel.app/" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="FNNz Portfolio" />
-        <meta name="twitter:description" content="Your description here" />
+        <meta name="twitter:title" content="Narathorn Noophum Portfolio - FNNz" />
+        <meta name="twitter:description" content="Narathorn Noophum's portfolio. My name is Narathorn Noophum. My nickname is Fan. I’m 22 years old." />
         <meta name="twitter:image" content="https://fannz.vercel.app/logo.ico" />
       </Helmet>
       <Modal />
