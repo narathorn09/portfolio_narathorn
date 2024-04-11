@@ -84,7 +84,7 @@ const Modal = () => {
                   <div className="relative h-[230px] md:h-[500px]">
                     {/* Display only the current slide */}
                     <img
-                      src={`${urlImg}${currentSlide}.png`}
+                      src={`${urlImg}${currentSlide}.webp`}
                       className="object-cover rounded-md border-2 absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                       alt={`Slide ${currentSlide}`}
                     />

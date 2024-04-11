@@ -93,7 +93,7 @@ const Home = () => {
           <div className="bg-indigo-600  rounded-full size-[300px] md:size-[400px] drop-shadow-2xl">
             <img
               className="object-cover w-full h-full rounded-full bg-gradient-to-r from-indigo-900 via-indigo-700 to-indigo-600"
-              src="/profile.png"
+              src="/profile.webp"
               alt="Profile"
             />
           </div>
@@ -123,8 +123,8 @@ const Home = () => {
               Faculty of Science | Computer Science
             </p>
             <div className="flex flex-col md:flex-row md:space-x-3 ">
-              <p className="uppercase mt-4 flex justify-center items-center w-[100px] bg-gradient-to-r font-medium from-indigo-800 via-indigo-700 to-indigo-500 rounded-full text-white px-4 py-2">
-                GPA 3.81
+              <p className="uppercase mt-4 flex justify-center items-center w-[120px] bg-gradient-to-r font-medium from-indigo-800 via-indigo-700 to-indigo-500 rounded-full text-white px-4 py-2">
+                GPAX 3.81
               </p>
               <p className="uppercase mt-4 flex justify-center items-center w-[200px] bg-gradient-to-r font-medium from-indigo-800 via-indigo-700 to-indigo-500 rounded-full text-white px-4 py-2">
                 first-class honors
